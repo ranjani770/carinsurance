@@ -20,6 +20,7 @@ public class ClaimService {
 	public ClaimService(ClaimRepository claimRepository, PolicyRepository policyRepository) {
 		this.claimRepository = claimRepository;
 		this.policyRepository = policyRepository;
+          System.out.println();
 	}
 
 	public List<Claim> getAllClaims() {
