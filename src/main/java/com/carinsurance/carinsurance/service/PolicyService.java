@@ -30,6 +30,7 @@ public class PolicyService {
 		Customer cus=userRepository.findById(cusId)
 				.orElseThrow(() -> new RuntimeException("Customer not found"));
 		policy.setCustomer(cus);
+             System.out.println();
 		return policyRepository.save(policy);
 	}
 
